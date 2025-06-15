@@ -5,7 +5,7 @@ Smart Desk Monitoring system to promote healthy practices during extended period
 
 ## How It's Made:
 
-**Tech used:** C, C++, FreeRTOS, ESP-IDF
+**Tech used:** C++, FreeRTOS, ESP-IDF
 
 The motivation for this project stemmed from my countless hours spent studying at a desk during my first year of university. I would get frequent, seemingly inexplicable, headaches while studying for longer periods of time. Eventually I realized that while studying I would forget to drink water, leaving myself dehydrated for hours at a time. Thus I created this smart desk monitor to track time spent at my desk and to remind me to drink water, stand periodically, and not slouch during the time spent at my desk. The monitor is built off of an ESP32 microcontroller integrated with an IMU, an ultrasonic sensor, and a small OLED display alongside smaller components linked through a breadboard. The device monitors proximity to the sensor and starts tracking once the threshold is met. Every 20 minutes the user is alerted to drink water with an audible signal and a written message on the display. The same happens every 40 minutes, only now reminding the user to stand periodically. The device also constantly tracks posture via an IMU unit worn on the neck by the user. If the IMU detects a slouch angle past the set threshold, an audible signal sounds until rectified. A button is used to reset the reference angle for posture tracking.
 
